@@ -3,6 +3,7 @@ class Game
      Stock[] allStocks;
      Item[] allItems;
      Duck duck;
+     string[] news;
 
      class Stock{
         public int price;
