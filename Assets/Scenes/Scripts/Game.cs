@@ -13,7 +13,7 @@ public class Game
 
     public Dictionary<string, Stock> allStocks = new ();
     public Dictionary<string, Item> allItems;
-    public Duck duck;
+    public Duck duck = new ();
 
     public class Stock
     {
@@ -33,9 +33,10 @@ public class Game
 
     public class Duck
     {
-        int hat;
-        int color;
-        int shoes;
-        int clothes;
+        public int hat;
+        public int color;
+        public int shoes;
+        public int clothes;
+        public double net_worth;
     }
 }
