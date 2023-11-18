@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.graesonb.chat-gpt-wrapper-for-unity": {
+      "version": "https://github.com/GraesonB/ChatGPT-Wrapper-For-Unity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2bd8b1cefb5d807495c7c51d779a3733159834db"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,
@@ -128,6 +135,13 @@
         "com.unity.burst": "1.6.6",
         "com.unity.test-framework": "1.1.31"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
