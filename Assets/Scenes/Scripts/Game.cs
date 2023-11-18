@@ -1,21 +1,38 @@
-class Game
-{
-     Stock[] allStocks;
-     Item[] allItems;
-     Duck duck;
+using System;
+using System.Collections.Generic;
 
-     class Stock{
-        public int price;
-        public int remaining_change;
+public class Game
+{
+    public static Game instance = new Game();
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
     }
-    class Item{
+
+    public Dictionary<string, Stock> allStocks = new ();
+    public Dictionary<string, Item> allItems;
+    public Duck duck;
+
+    public class Stock
+    {
+        public string name;
+        public string id;
+        public double price;
+        public int remaining_change;
+        public int num_owned;
+    }
+    public class Item
+    {
         public int price;
         public bool unlocked;
 
         int effect;
     }
 
-    class Duck{
+    public class Duck
+    {
         int hat;
         int color;
         int shoes;
