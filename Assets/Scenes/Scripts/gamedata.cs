@@ -1,12 +1,16 @@
+using System;
+using System.Collections.Generic;
+
 class Game
 {
-     Stock[] allStocks;
-     Item[] allItems;
-     Duck duck;
+    Dictionary<string, Stock> allStocks;
+    Dictionary<string, Item> allItems;
+    Duck duck;
 
      class Stock{
         public int price;
         public int remaining_change;
+        public int num_owned;
     }
     class Item{
         public int price;
