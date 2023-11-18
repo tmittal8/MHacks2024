@@ -38,8 +38,9 @@ public class newsfeed : MonoBehaviour
                                     {0,0,20,10,15,20,10},
                                     {0,-10,30,0,20,10,0}};
 
+        string[] stockNames = {"HQPC", "QCS", "BBDS", "GB", "GEE", "CPI", "GDQI"};
 
-        var rnd = new Random();;
+        var rnd = new Random();
         int random_news  = rnd.Next(0, 5);
 
         //update newsfeed
@@ -50,8 +51,8 @@ public class newsfeed : MonoBehaviour
         Game.instance.news[0] = news[random_news];
 
         //update stock prices based on news
-        for(int i = 0; i < Game.instance.allStocks.Length; i++){
-            Game.instance.allStocks[i] = Game.instance.allStocks[i] + pricechanges[random_news][i];
+        for(int i = 0; i < 7; i++){
+            Game.instance.allStocks[stockNames[i]] = Game.instance.allStocks[stockNames[i]] + pricechanges[random_news][i];
         }
 
     }

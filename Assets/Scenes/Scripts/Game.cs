@@ -14,6 +14,7 @@ public class Game
     public Dictionary<string, Stock> allStocks = new ();
     public Dictionary<string, Item> allItems;
     public Duck duck = new ();
+    public string[] news;
 
     public class Stock
     {
