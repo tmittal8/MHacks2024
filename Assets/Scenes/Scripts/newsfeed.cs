@@ -27,7 +27,7 @@ public class newsfeed : MonoBehaviour
     }
 
 
-    void updateNews(){
+    static void updateNews(){
         string[] news = {"In a shocking incident, the ducks at Stock Pond started quacking in unison, producing a bizarre 'Thunderquack'. This peculiar phenomenon somehow generated an unsuspected power surge in the area, interestingly noted by local energy analysts",
                         "In an unexpected spectacle, the ducks at Stock Pond broke out into a delightful 'Quack Symphony'. The harmonious display of quacking in sync has taken the internet by storm, sparking discussions of a potential 'Duck Mozart'",
                         "A parade of ducklings around the Stock Pond, led by the oldest duck, took place this morning. The unusual event has caught attention and warmed the hearts of many, becoming a viral sensation",
@@ -40,7 +40,7 @@ public class newsfeed : MonoBehaviour
 
         string[] stockNames = {"HQPC", "QCS", "BBDS", "GB", "GEE", "CPI", "GDQI"};
 
-        var rnd = new Random();
+        Random rnd = new Random();
         int random_news  = rnd.Next(0, 5);
 
         //update newsfeed
