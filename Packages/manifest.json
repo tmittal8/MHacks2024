@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.graesonb.chat-gpt-wrapper-for-unity": "https://github.com/GraesonB/ChatGPT-Wrapper-For-Unity.git",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.2d": "2.0.0",
     "com.unity.feature.mobile": "1.0.0",
