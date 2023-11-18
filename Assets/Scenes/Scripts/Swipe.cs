@@ -8,9 +8,11 @@ public class Swipe : MonoBehaviour
 {
 
     public TMP_Text text;
+    public GameObject canvas;
 
     private Vector2 startTouchPosition;
     private Vector2 endTouchPosition;
+
 
     // Update is called once per frame
     void Update()
@@ -25,11 +27,11 @@ public class Swipe : MonoBehaviour
 
             if(endTouchPosition.x > startTouchPosition.x)
             {
-                PageRight();
+                canvas.GetComponent<SceneSwitcher>().Forward();
             }
             if(endTouchPosition.x < startTouchPosition.x)
             {
-                PageLeft();
+                canvas.GetComponent<SceneSwitcher>().Backward();
             }
         }
     }
